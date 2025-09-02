@@ -1,3 +1,5 @@
+#A decorator in Python is a special function that allows 
+you to modify or extend the behavior of another function without changing its actual code.
 def add_sprinkles(func):
     def wrapper(*args,**kwargs):
       print("adding sprinkles")
