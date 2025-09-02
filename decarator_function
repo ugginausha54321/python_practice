@@ -1,0 +1,9 @@
+def add_sprinkles(func):
+    def wrapper(*args,**kwargs):
+      print("adding sprinkles")
+      func(*args,**kwargs)
+    return wrapper
+@add_sprinkles
+def get_ice_cream(flavor,size):
+    print(f" here is your {size} {flavor} ice cream")
+get_ice_cream(vanilla)
